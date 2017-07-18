@@ -13,13 +13,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "react-scripts start",
-    "deploy": "react-scripts build serve -s build"
+    "deploy": "react-scripts build && serve -s build"
   },
   "author": "Kalvin Krishna-Desainer Widnyana Santika",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "github.com/pencarinafkah/adminwebdesign/reactjs"
+    "url": "https://pencarinafkah.github.io/adminwebdesign/reactjs/build"
   },
   "keywords": [
     "adminpage"
