@@ -44,6 +44,7 @@
 	position: absolute;
 	top: -5px;
 	cursor: pointer;
+	display: none;
 }
 .nav-menu .menu .submenu{
 	position: absolute;
