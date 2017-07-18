@@ -6,7 +6,20 @@ function List(props){
 		<li>	
 			<span>{props.namamenu}</span>
 			<span className='icon'><i className="fa fa-caret-right" aria-hidden="true"></i></span>
+			{props.subMenu}
 		</li>
+	);
+}
+
+function SubMenu(props){
+	return(
+		<ul className={'list-unstyled submenu '+props.warna}>
+			<List namamenu='menu1'/>
+			<List namamenu='menu2'/>
+			<List namamenu='menu3'/>
+			<List namamenu='menu4'/>
+			<List namamenu='menu5'/>
+		</ul>
 	);
 }
 
@@ -14,10 +27,18 @@ function Menucontainer(){
 	return(
 		<ul className='list-unstyled menu'>
 			<List namamenu='menu1'/>
-			<List namamenu='menu2'/>
+			<List namamenu='menu2' subMenu=
+				{
+					<SubMenu warna='blue'/>
+				}
+			/>
 			<List namamenu='menu3'/>
 			<List namamenu='menu4'/>
-			<List namamenu='menu5'/>
+			<List namamenu='menu5'subMenu=
+				{
+					<SubMenu warna='yellow'/>
+				}
+			/>
 		</ul>
 	);
 }
@@ -53,14 +74,15 @@ function NavSamping(){
 					</button>
 
 					<div className='nav-menu'>
-						<Menucontainer/>
+						<Menucontainer >
+						</Menucontainer>
 					</div>
 				</div>
-
-				
 		</section>
 	);
 }
+
+
 
 class Navigasi extends Component{
 

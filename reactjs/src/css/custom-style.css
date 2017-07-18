@@ -45,17 +45,26 @@
 	top: -5px;
 	display: none;
 }
-.wrap:hover .nav-menu{
+.wrap:hover .nav-menu, .submenu{
 	display: block;
+}
+.nav-menu .menu{
+	background-color: #cccccc;
 }
 .nav-menu ul{
 	width: 100px;
-	background-color: #cccccc;
 }
 .nav-menu .menu .submenu{
 	position: absolute;
     top: 23px;
     margin-left: 92px;
+    display: none;
+}
+ul.blue{
+	background-color: blue;
+}
+ul.yellow{
+	background-color: yellow;
 }
 .nav-menu ul li{
 	padding: 20px 15px 15px 10px;
