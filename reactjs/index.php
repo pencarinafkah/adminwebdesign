@@ -5,10 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
 	<link rel="stylesheet" href="">
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script>
 		$(document).ready(function(){
-			window.location.href='build/index.html';
+			window.location.href='./build/index.html';
 		});
 	</script>
 </head>
