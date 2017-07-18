@@ -11,7 +11,7 @@ RedirectMatch 403 /\.svn.*$
   #previously this would not have been possible.
   #'system' can be replaced if you have renamed your system folder.
   RewriteCond %{REQUEST_URI} ^system.*
-  RewriteRule ^(.*)$ /index.php/$1 [L]
+  RewriteRule ^(.*)$ /index.html/$1 [L]
 
   RewriteCond $1 ^system
   RewriteRule ^(.*)$ / [R=301,L]
