@@ -1,0 +1,27 @@
+{
+  "name": "reactjs",
+  "version": "1.0.0",
+  "description": "webprojectwithreact",
+  "main": "reactlib.js",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start",
+    "deploy": "react-scripts build"
+  },
+  "author": "Kalvin Krishna-Desainer Widnyana Santika",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "github.com/pencarinafkah/adminwebdesign/reactjs"
+  },
+  "keywords": [
+    "adminpage"
+  ]
+}
