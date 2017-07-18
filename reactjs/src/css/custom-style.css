@@ -43,29 +43,41 @@
 	margin-left:118px;
 	position: absolute;
 	top: -5px;
-	display: none;
+	cursor: pointer;
 }
-.wrap:hover .nav-menu, .submenu{
+.nav-menu .menu .submenu{
+	position: absolute;
+    top: 5px;
+    margin-left: 142px;
+    display: none;
+}
+
+.wrap:hover .nav-menu,.menu>li:hover > .submenu, .submenu > li:hover >.submenu{
 	display: block;
 }
+
+.menu > li:hover{
+	background-color: orange;
+}
+
 .nav-menu .menu{
 	background-color: #cccccc;
 }
 .nav-menu ul{
-	width: 100px;
+	width: 150px;
 }
-.nav-menu .menu .submenu{
-	position: absolute;
-    top: 23px;
-    margin-left: 92px;
-    display: none;
-}
-ul.blue{
-	background-color: blue;
+
+ul.grey{
+	background-color: #cccccc;
 }
 ul.yellow{
 	background-color: yellow;
 }
+
+.nav-menu ul li:hover ul{
+	display: block;
+}
+
 .nav-menu ul li{
 	padding: 20px 15px 15px 10px;
 	line-height: 20px;
