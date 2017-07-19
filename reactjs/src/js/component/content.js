@@ -40,7 +40,7 @@ function MainContent(){
 function LeftList(props){
 	return (
 		<div className='col-md-4'>
-			<img className='img-responsive cardImage' src={require('../../img/17352337_687369958112740_3529730537595602351_n.jpg')}/>
+			<img className='img-responsive cardImage' src={require('../../img/17352337_687369958112740_3529730537595602351_n.jpg')} alt='...'/>
 			<Form/>
 		</div>
 	);
