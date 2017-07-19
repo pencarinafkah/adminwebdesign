@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import '../../css/custom-style.css';
 
+
+
 function List(props){
 	return (
 		<li>	
-			<span>{props.namamenu}</span>
-			<span className='icon'><i className="fa fa-caret-right" aria-hidden="true"></i></span>
+			<a href={props.link}><span>{props.namamenu}</span></a>
+			<span className='icon'>
+				<i className="fa fa-caret-right" aria-hidden="true"></i>
+			</span>
 			{props.subMenu}
 		</li>
 	);
@@ -13,26 +17,28 @@ function List(props){
 function SubSubMenu(props){
 	return(
 		<ul className={'list-unstyled submenu '+props.warna}>
-			<List namamenu='subsubmenu1' />
-			<List namamenu='subsubmenu2'/>
-			<List namamenu='subsubmenu3'/>
-			<List namamenu='subsubmenu4'/>
-			<List namamenu='subsubmenu5'/>
+			<List namamenu='subsubmenu1' link='#subsubmenu1'/>
+			<List namamenu='subsubmenu2' link='#subsubmenu2'/>
+			<List namamenu='subsubmenu3' link='#subsubmenu3'/>
+			<List namamenu='subsubmenu4' link='#subsubmenu4'/>
+			<List namamenu='subsubmenu5' link='#subsubmenu5'/>
 		</ul>
 	);
 }
 function SubMenu(props){
 	return(
 		<ul className={'list-unstyled submenu '+props.warna}>
-			<List namamenu='submenu1' />
-			<List namamenu='submenu2'  subMenu=
+			<List namamenu='submenu1' link='#submenu1'/>
+			<List namamenu='submenu2'  
+				subMenu =
 				{
 					<SubSubMenu warna='grey'/>
 				}
+				link='#submenu2'
 			/>
-			<List namamenu='submenu3'/>
-			<List namamenu='submenu4'/>
-			<List namamenu='submenu5'/>
+			<List namamenu='submenu3' link='#submenu3'/>
+			<List namamenu='submenu4' link='#submenu4'/>
+			<List namamenu='submenu5' link='#submenu5'/>
 		</ul>
 	);
 }
@@ -40,15 +46,16 @@ function SubMenu(props){
 function Menucontainer(){
 	return(
 		<ul className='list-unstyled menu'>
-			<List namamenu='menu1'/>
-			<List namamenu='menu2' subMenu=
+			<List namamenu='menu1' link='#menu1'/>
+			<List namamenu='menu2' link='#menu2'
+				subMenu=
 				{
 					<SubMenu warna='grey'/>
 				}
 			/>
-			<List namamenu='menu3'/>
-			<List namamenu='menu4'/>
-			<List namamenu='menu5'/>
+			<List namamenu='menu3' link='#menu3'/>
+			<List namamenu='menu4' link='#menu4'/>
+			<List namamenu='menu5' link='#menu5'/>
 		</ul>
 	);
 }

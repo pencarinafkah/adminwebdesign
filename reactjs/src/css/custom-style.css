@@ -57,7 +57,7 @@
 	display: block;
 }
 
-.menu > li:hover{
+.menu > li:hover , .submenu>li:hover{
 	background-color: orange;
 }
 
@@ -88,7 +88,17 @@ ul.yellow{
 	float: right;
 }
 
+.pagination li.active a{
+	background-color: skyblue;
+	color: white;
+}
 
+.content-root{
+	margin-top: 50px;
+}
+.cardImage{
+	max-height: 80px;
+}
 @media screen and (max-width: 767px){
 	.nav-container{
 		position: relative;
